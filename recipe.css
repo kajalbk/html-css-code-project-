@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background-color: #dda0ddee;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+button {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: green;
+    background-color: #8181ce54;
+}
+
+button:hover {
+    background-color: rgb(161, 85, 85);
+    color: black;
+}
+
+.header h1 {
+    font-size: 50px;
+    color: darksalmon;
+}
+
+.header p {
+    font-style: italic;
+    color: rgb(71, 34, 156);
+
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #c96969;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+div.fakeimg {
+    background-color: #e46868;
+    width: 100%;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+div.fakeimg p {
+    font-size: 20px;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #c96969;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}

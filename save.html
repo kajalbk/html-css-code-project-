@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>page website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="save.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <p style="background-color: rgb(173, 207, 123);color: rgb(87, 57, 218);">trying javascript</p>
+    <div>
+        <button type="button" ondblclick="document.getElementById('img').src='pexels-pixabay-268533.jpg'"> doblclick
+            change
+            img1</button>
+        <img id="img" src="pexels-pixabay-326055.jpg" style="width: 30%;font-size:20px;height: 30%;">
+        <button type="button" onclick="document.getElementById('img').src='pexels-pixabay-206359.jpg'">click change
+            img2</button>
+    </div>
+
+    <div id="dv" style="background-color: aqua; width: 100%;height: 100%;margin-top: 5rem;float: left;">
+        <p id="size">javascript logic practice</p>
+        <button class="btn2" type="button" onclick="document.getElementById('size').style.fontSize='50px'">click for
+            bigger font size
+
+        </button>
+    </div>
+    <div id="dv1" style="background-color: black;margin-top: 5rem;width: 100%;height: 500px;">
+        <p id="display">hello i am going for hide</p>
+        <button type="button" onclick="document.getElementById('display').style.display='none'">hide button</button>
+
+        <button type="button" onclick="document.getElementById('display').style.display='block'">show button</button>
+
+    </div>
+    <div id="dv2">
+        <p id="demo2">hii we can use javascript script.js file</p>
+        <button type="button" onclick="myfunction()">click me</button>
+    </div>
+    <script src="script.js"></script>
+
+
+    <h2>The window.print() Method</h2>
+
+    <p>Click the button to print the current page.</p>
+
+    <button onclick="window.print()">Print this page</button>
+    <br>
+
+    <br>
+    <h2>javascript statement a,b,c</h2>
+    <p>javascript statement are sepreted by semicolons.</p>
+    <p id="para1"></p>
+    <script>
+        let a, b, c;
+        a = 5;
+        b = 7;
+        c = a + b;
+        document.getElementById("para1").innerHTML = c;
+
+    </script>
+
+
+    <h2>javascript variables</h2>
+    <p>x is assigned the value of 6:</p>
+    <p id="p2"></p>
+    <script>
+        let x;
+        x = 6;
+        document.getElementById("p2").innerHTML = x;
+    </script>
+
+
+    <h2>javascript operators</h2>
+    <p id="p3"></p>
+    <script>
+        document.getElementById("p3").innerHTML = (5 + 6) * 10;
+    </script>
+
+    <h2>assigning javascript values</h2>
+    <p>in javascript = operator is used to assign values to variables</p>
+    <p id="p4"></p>
+    <script>
+        let z, y;
+        z = 5;
+        y = 5;
+        document.getElementById("p4").innerHTML = z + y;
+    </script>
+
+    <h2>javascript expression</h2>
+    <p id="p5"></p>
+    <script>
+        let p;
+        p = 5;
+        document.getElementById("p5").innerHTML = p * 10;
+    </script>
+
+
+    <h2>javascript expression</h2>
+    <p id="p6"></p>
+    <script>
+        document.getElementById("p6").innerHTML = "kajal" + " " + "sahani";
+    </script>
+
+    <h2>
+        the let keyword create variables
+    </h2>
+    <p id="p7"></p>
+    <script>
+        let a1, a2;
+        a1 = 5 + 6;
+        a2 = a1 * 10;
+        document.getElementById("p7").innerHTML = a2;
+    </script>
+
+
+    <h2>javascript const</h2>
+    <p>declaring a constant array does not make the elements unchangeable</p>
+    <p id="con"></p>
+    <script>
+        const cars = ["saab", "volvo", "bmw"];
+        cars[0] = "toyota";
+        cars.push("auudi");
+        cars.unshift("honda");
+        document.getElementById("con").innerHTML = cars;
+    </script>
+    <h2>javascript const</h2>
+    <p>declaring a constant object does not make the elements unchangeable</p>
+    <p id="objt"></p>
+    <script>
+        const car = {
+            type: "fiate",
+            modal: "500",
+            color: "white"
+        };
+        car.color = "red";
+        car.owner = "kajal";
+        document.getElementById("objt").innerHTML = "car owner is " + car.owner;
+    </script>
+
+    <h2>javascript assignment operators</h2>
+    <p id="opera"></p>
+    <script>
+        let text1 = "what a very ";
+        text1 += "nice day";
+        document.getElementById("opera").innerHTML = text1;
+    </script>
+    <h2>Increament operator ++</h2>
+    <p id="inc"></p>
+    <script>
+        let p1 = 5;
+        p1++;
+        let b1 = p1;
+        document.getElementById("inc").innerHTML = b1;
+    </script>
+    <h2>Decreament operator --</h2>
+    <p id="dec"></p>
+    <script>
+        let p2 = 5;
+        p2--;
+        let b2 = p2;
+        document.getElementById("dec").innerHTML = b2;
+    </script>
+
+    <h2>javascript exponential ** operator x**2 means x<sup>2</sup></h2>
+    <p id="expo"></p>
+    <script>
+        let j = parseInt(prompt('enter a number'));
+        let k = j ** 2;
+        document.getElementById("expo").innerHTML = k;
+    </script>
+
+    <h1>javascript function</h1>
+    <p id="func"></p>
+    <script>
+        function hiFunction(s, d) {
+            return s * d;
+        }
+        let result = hiFunction(2, 3);
+        document.getElementById("func").innerHTML = result;
+    </script>
+
+
+    <h2>javascript object with this keyword</h2>
+    <p id="objthis"></p>
+    <script>
+        const person = {
+            firstName: "kajal",
+            lastName: "sahani",
+            age: 23,
+            eyeColor: "black"
+        };
+        document.getElementById("objthis").innerHTML = person.firstName + " is " + person.age + " years old. ";
+
+    </script>
+
+    <p>Click the button to display the date.</p>
+    <button onclick="displayDate()">The time is?</button>
+    <p id="demo5"></p>
+
+
+    <h1>JavaScript Strings</h1>
+    <h2>The length Property</h2>
+
+    <p>The length of the string is:</p>
+    <p id="demo6"></p>
+
+    <script>
+        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("demo6").innerHTML = text.length;
+    </script>
+
+    <hr>
+    <p>The escape sequence \" inserts a double quote in a string.<br>
+        Six other escape sequences are valid in JavaScript:<br>
+
+        Code Result<br>
+        \b Backspace<br>
+        \f Form Feed<br>
+        \n New Line<br>
+        \r Carriage Return<br>
+        \t Horizontal Tabulator<br>
+        \v Vertical Tabulator<br>
+    </p>
+
+    <p id="demo7"></p>
+
+    <script>
+        let text2 = "We are the so-called \"Vikings\" from the north.";
+        document.getElementById("demo7").innerHTML = text2; 
+    </script>
+
+    <h1>JavaScript Template Strings</h1>
+    <p>Templates allow multiline strings:</p>
+
+    <p id="demo8"></p>
+
+    <p>Templates are not supported in Internet Explorer.</p>
+
+    <script>
+        let t =
+
+            `The quick
+brown fox
+jumps over
+the lazy dog`;
+
+        document.getElementById("demo8").innerHTML = t;
+    </script>
+
+
+
+
+</body>
+
+</html>

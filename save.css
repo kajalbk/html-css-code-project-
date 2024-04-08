@@ -1,0 +1,47 @@
+* {
+    font-size: 30px;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+body {
+    background-color: palevioletred;
+}
+
+
+button {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: green;
+    background-color: #8181ce54;
+    float: left;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    word-spacing: 10px;
+    font-variant: small-caps;
+}
+
+button:hover {
+    background-color: rgb(161, 85, 85);
+    color: black;
+}
+
+.btn2 {
+    background-color: rgb(155, 105, 236);
+    color: black;
+}
+
+#size {
+    background-color: greenyellow;
+}
+
+#display {
+    background-color: white;
+    color: chocolate;
+}
+
+#dv2 {
+    background-color: orange;
+}
